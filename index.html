@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تحديد المستلم</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <input type="text" id="fullName" placeholder="اكتب الاسم بالكامل">
+
+  <select id="type">
+    <option value="">اختر الاختبار</option>
+    <option value="employee">موظف</option>
+    <option value="worker">عامل</option>
+    <option value="contract">عقد</option>
+  </select>
+
+  <div class="radio-group">
+    <label><input type="radio" name="gender" value="male"> ذكر</label>
+    <label><input type="radio" name="gender" value="female"> أنثى</label>
+  </div>
+
+  <button onclick="findReceiver()">إيجاد</button>
+
+  <div class="result" id="result">
+    <p><strong>اسم المستلم:</strong> <span id="receiver"></span></p>
+    <p><strong>بديل المستلم:</strong> <span id="alternate"></span></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
